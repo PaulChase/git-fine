@@ -1,24 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import "font-awesome/css/font-awesome.min.css";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 
-import { ApolloClient, InMemoryCache, ApolloProvider, gql, createHttpLink } from "@apollo/client";
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = createHttpLink({
-	uri: "https://api.github.com/graphql",
+	uri: import.meta.env.VITE_GITHUB_ENDPOINT,
 });
 
 const authLink = setContext((_, { headers }) => {
 	return {
 		headers: {
 			...headers,
-			authorization: `Bearer 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`,
+			authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
 		},
 	};
 });
