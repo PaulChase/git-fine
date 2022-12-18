@@ -72,7 +72,7 @@ export default function Profile() {
 										<img
 											src={user.avatarUrl}
 											alt=""
-											className=" h-96  object-cover lg:h-[32rem] relative -bottom-6 -right-6 shadow-2xl shadow-gray-900"
+											className=" h-80 w-[17rem] md:h-96 md:w-auto  object-cover lg:h-[32rem] relative -bottom-6 -right-6 shadow-2xl shadow-gray-900"
 										/>
 									</div>
 								</div>

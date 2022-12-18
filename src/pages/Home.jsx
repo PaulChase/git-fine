@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
 	const [username, setUsername] = useState("");
@@ -24,14 +24,14 @@ export default function Home() {
 			style={{ backgroundImage: "url('/bg.jpg')" }}
 		>
 			<div className=" bg-black/90 absolute top-0 left-0 w-full h-full"></div>
-			<div className=" relative z-10 h-full w-full flex justify-center items-center text-center flex-col space-y-10">
-				<h1 className=" text-6xl font-extrabold ">
+			<div className=" relative z-10 h-full w-full flex justify-center items-center text-center flex-col space-y-10 px-4">
+				<h1 className=" text-5xl md:text-6xl font-extrabold ">
 					<span className=" fa fa-user-circle"></span> Git-Fine
 				</h1>
 
 				<p className=" font-semibold text-xl text-gray-50">Generate beautiful portfolios from your Github profile</p>
 
-				<form className="w-[45rem]  mx-auto flex items-center" onSubmit={handleSubmit}>
+				<form className=" w-full lg:w-[45rem]  mx-auto flex items-center" onSubmit={handleSubmit}>
 					<input
 						type="text"
 						className="outline-none w-full px-4 py-3  text-gray-600"
