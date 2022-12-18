@@ -26,7 +26,7 @@ export default function Home() {
 			<div className=" bg-black/90 absolute top-0 left-0 w-full h-full"></div>
 			<div className=" relative z-10 h-full w-full flex justify-center items-center text-center flex-col space-y-10">
 				<h1 className=" text-6xl font-extrabold ">
-					<span className=" fa fa-user-circle"></span> GitFine
+					<span className=" fa fa-user-circle"></span> Git-Fine
 				</h1>
 
 				<p className=" font-semibold text-xl text-gray-50">Generate beautiful portfolios from your Github profile</p>

@@ -9,7 +9,7 @@ const GET_USER = gql`
 	query GetUser($username: String!) {
 		repositoryOwner(login: $username) {
 			login
-			... on User {
+			... on User 
 				name
 				bio
 				avatarUrl
