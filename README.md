@@ -1,1 +1,1 @@
-## A React App that automatically generates beautiful portfolios from your github username
+## A React App that automatically generates Beautiful Portfolios with just your github username
